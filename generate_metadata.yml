@@ -1,0 +1,3 @@
+              # Convert filename to readable title
+              title="$(echo "$name" | sed \
+                -E 's/[-_]+/ /g; s/\b(.)/\u\1/g')"
